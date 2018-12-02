@@ -30,6 +30,12 @@
       <div class="game-list-wrap" id="gameList">
         <ul class="clearfix" id="div_list">
           <li>
+            <div class="game-a" onclick="vList()">
+                  <img src="../image/v.jpg" alt="">
+                  <p class="game-list-name">最新电影</p>
+                </div>
+              </li>
+          <li>
             <div class="game-a" onclick="tvList()">
               <img src="../image/tvzb.png" alt="">
               <p class="game-list-name">电视直播</p>
@@ -83,7 +89,7 @@ var slide = new auiSlide({
     var div_list = $api.byId('div_list');
     var template = $api.byId('template');
     api.ajax({
-        url: 'http://www.xv3l.cn/api/gamezhibo.php',
+        url: 'http://app.006tool.cn/api/gamezhibo.php',
         method: 'get',
         data: {
             values: {
@@ -218,7 +224,7 @@ var slide = new auiSlide({
     var div_list = $api.byId('div_list');
     var template = $api.byId('template');
     api.ajax({
-        url: 'http://www.xv3l.cn/api/gamezhibo.php',
+        url: 'http://app.006tol.cn/api/gamezhibo.php',
         method: 'get',
         data: {
             values: {
